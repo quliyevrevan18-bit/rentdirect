@@ -19,9 +19,30 @@ input,select{padding:13px;margin:5px;border:1px solid #ccdae6;border-radius:8px}
 button{background:#1266a5;color:white;border:0;padding:14px 24px;border-radius:8px;font-weight:bold;cursor:pointer}
 section{padding:40px 6%}
 h2{color:#1266a5}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 15px #0001}
-.photo{height:160px;background:#c9e2f3;display:grid;place-items:center;font-size:55px}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:24px;
+}
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 20px #0002;
+transition:0.3s;
+}
+.photo{
+height:200px;
+overflow:hidden;
+background:#e5f2fa;
+}
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
 .info{padding:16px}
 .price{color:#1266a5;font-size:21px;font-weight:bold}
 .owner{background:#1266a5;color:white;padding:35px;border-radius:16px;text-align:center}
