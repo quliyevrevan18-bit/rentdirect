@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RentDirect Admin Panel</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f1f5fb;color:#18344c}
+header{background:#0756a5;color:white;padding:22px}
+header h2{margin:0}
+.container{padding:20px;max-width:1000px;margin:auto}
+h3{color:#0756a5}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:white;padding:20px;border-radius:14px;box-shadow:0 3px 12px #0001}
+.number{font-size:28px;font-weight:bold;color:#1266e8}
+.menu{display:grid;gap:12px;margin-top:20px}
+.menu button{background:#0756a5;color:white;border:0;padding:16px;border-radius:10px;font-size:16px;text-align:left}
+.note{background:white;padding:18px;border-radius:12px;margin-top:20px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+<h2>RentDirect</h2>
+<p>İdarəetmə paneli</p>
+</header>
+<div class="container">
+<h3>Ümumi məlumat</h3>
+<div class="stats">
+<div class="card">Elanlar<div class="number">0</div></div>
+<div class="card">İstifadəçilər<div class="number">0</div></div>
+<div class="card">Bronlar<div class="number">0</div></div>
+<div class="card">Komissiya<div class="number">0 AZN</div></div>
+</div>
+<h3>İdarəetmə</h3>
+<div class="menu">
+<button>🏠 Elanları idarə et</button>
+<button>👤 İstifadəçilər</button>
+<button>📅 Bronlar</button>
+<button>💰 Komissiyalar (5%)</button>
+<button>⚠️ Şikayətlər</button>
+</div>
+<div class="note">
+<strong>RentDirect Admin</strong>
+<p>Bu ilkin dizayn nümunəsidir. Real məlumat bazası və təhlükəsiz admin girişi növbəti mərhələdə qoşulacaq.</p>
+</div>
+</div>
+</body>
+</html>
