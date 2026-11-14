@@ -80,7 +80,7 @@ footer{background:#103c5c;color:white;text-align:center;padding:25px;margin-top:
 <div class="search">
   
 
-<select>
+<select id="location" onchange="updateSettlements()">
   <option value="">Şəhər və ya rayon seçin</option>
   <option>Bakı</option>
   <option>Sumqayıt</option>
@@ -156,6 +156,30 @@ footer{background:#103c5c;color:white;text-align:center;padding:25px;margin-top:
   <option>Şərur</option>
   <option>Naxçıvan</option>
 </select>
+  
+<script>
+function updateSettlements() {
+  const location = document.getElementById("location").value;
+  const settlement = document.getElementById("settlement");
+
+  const places = {
+    "Bakı": ["Binəqədi", "Nərimanov", "Nəsimi", "Xətai", "Yasamal", "Sabunçu", "Suraxanı", "Mərdəkan", "Buzovna", "Bilgəh"],
+    "Abşeron": ["Xırdalan", "Masazır", "Məhəmmədi", "Digah", "Fatmayı", "Saray", "Hökməli"],
+    "Sumqayıt": ["Corat", "Hacı Zeynalabdin", "Novxanı", "Yaşma"]
+  };
+
+  settlement.innerHTML = '<option value="">Qəsəbə və ya kənd seçin</option>';
+
+  const list = places[location] || ["Digər yaşayış məntəqəsi"];
+
+  list.forEach(function(place) {
+    const option = document.createElement("option");
+    option.textContent = place;
+    option.value = place;
+    settlement.appendChild(option);
+  });
+}
+</script>
   
   <select id="settlement">
   <option value="">Qəsəbə və ya kənd seçin</option>
