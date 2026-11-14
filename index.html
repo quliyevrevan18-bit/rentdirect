@@ -76,20 +76,32 @@ footer{background:#103c5c;color:white;text-align:center;padding:25px;margin-top:
 <h1>İstədiyin evi tap!</h1>
 <p>Vasitəçisiz. Birbaşa ev sahibindən.</p>
 
+
 <div class="search">
-<input type="text" placeholder="Şəhər və ya rayon">
-<input type="date">
-<input type="date">
-<select>
-<option>2 qonaq</option>
-<option>1 qonaq</option>
-<option>3 qonaq</option>
-<option>4 qonaq</option>
-<option>5+ qonaq</option>
-</select>
-<button onclick="alert('Real axtarış sistemi növbəti mərhələdə qoşulacaq.')">Axtar</button>
+  <input type="text" placeholder="Şəhər və ya rayon">
+
+  <input type="text" placeholder="Qəsəbə və ya kənd">
+
+  <label>Giriş tarixi</label>
+  <input type="date">
+
+  <label>Çıxış tarixi</label>
+  <input type="date">
+
+  <select>
+    <option value="">Qonaq sayı</option>
+    <option>1 qonaq</option>
+    <option>2 qonaq</option>
+    <option>3 qonaq</option>
+    <option>4 qonaq</option>
+    <option>5+ qonaq</option>
+  </select>
+
+  <button onclick="alert('Axtarış sistemi növbəti mərhələdə aktivləşdiriləcək.')">
+    Axtar
+  </button>
 </div>
-</div>
+  
 
 <section id="homes">
   <h2>Günlük kirayə evlər</h2>
